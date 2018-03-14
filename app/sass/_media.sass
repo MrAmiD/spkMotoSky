@@ -1,16 +1,32 @@
 @import "vars"
-
+=xxl-width($columnCount)
+  flex: 0 0 ((100%/18)*$columnCount)
+  max-width: ((100%/18)*$columnCount)
 /*==========  Desktop First  ==========*/
 
-//Extra large: ≥1200px
+
+@media only screen and (max-width : 1850px)
+  /**/
+//Extra large: <1200px
 +media-breakpoint-down(xl)
   /**/
-
-//Large: ≥992px
+//Large: <992px
 +media-breakpoint-down(lg)
-  /**/
-
-//Medium: ≥768px
+  .bx_breadcrumbs
+    margin-top: 30px
+  #my-header .lvl2
+    .container.standart
+      display: none
+  .contacts-c .callback-b
+    display: flex
+    align-items: center
+    .btn-accent
+      padding: 10px
+    .menu-m-b
+      margin-left: 10px
+  .lvl1-r
+    align-items: center
+//Medium: <768px sm
 +media-breakpoint-down(md)
   .content
     table
@@ -21,36 +37,155 @@
         display: block
         min-width: 500px
         width: 100%
-//Small: ≥576px
+  .contacts-c .callback-b .link-t
+    display: none
+  .contacts-c .callback-b .btn-accent
+    display: block
+  #my-header .discr
+    font-size: 22px
+  .contacts-c .callback-b
+    text-align: right
+    a
+      text-align: right
+
+//Small: <576px
 +media-breakpoint-down(sm)
-  /**/
+  .contacts-c
+    flex-direction: row
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 15px
+    .callback-b
+      margin-bottom: 0px
+      order: 3
+    .phone
+      margin-bottom: 0px
+
 //Extra small: >0
 +media-breakpoint-down(xs)
-	/**/
-
-
+  .contacts-c
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-end
+    .phone
+      margin-bottom: 10px
+    .socials
+      margin-bottom: 10px!important
+  #my-header .discr
+    font-size: 14px
+  .socials .item-sc
+    margin-left: 6px
 /*==========  Mobile First  ==========*/
 
-//Extra small: <576px
+//Extra small: >576px
 +media-breakpoint-up(xs)
-	/**/
-//Small: ≤576px
+/**/
+//Small: >576px
 +media-breakpoint-up(sm)
-	/**/
+/**/
 
-//Medium: ≤768px
+//Medium: >768px
 +media-breakpoint-up(md)
-  /**/
+/**/
 
 
 
-//Large: ≤992px
+//Large: >992px
 +media-breakpoint-up(lg)
-  /**/
+/**/
 
-//Extra large: ≤1200px
+//Extra large: >1200px
 +media-breakpoint-up(xl)
   .container
     width: 1170px
     max-width: 100%
+  .menu-m-b
+    display: none
 
+@media only screen and (min-width : 1850px)
+  //my custom grid
+  .mym-cont
+    display: none!important
+  #menu-btn
+    display: none
+  .main-menu
+    display: block
+  .container
+    width: 1800px
+    max-width: 100%
+    &.standart
+      width: 1170px
+  .col-xxl-1
+    +xxl-width(1)
+  .col-xxl-2
+    +xxl-width(2)
+  .col-xxl-3
+    +xxl-width(3)
+  .col-xxl-4
+    +xxl-width(4)
+  .col-xxl-5
+    +xxl-width(5)
+  .col-xxl-6
+    +xxl-width(6)
+  .col-xxl-7
+    +xxl-width(7)
+  .col-xxl-8
+    +xxl-width(8)
+  .col-xxl-9
+    +xxl-width(9)
+  .col-xxl-10
+    +xxl-width(10)
+  .col-xxl-11
+    +xxl-width(11)
+  .col-xxl-12
+    +xxl-width(12)
+  .col-xxl-13
+    +xxl-width(13)
+  .col-xxl-14
+    +xxl-width(14)
+  .col-xxl-15
+    +xxl-width(15)
+  .col-xxl-16
+    +xxl-width(16)
+  .col-xxl-17
+    +xxl-width(17)
+  .col-xxl-18
+    +xxl-width(18)
+
+  .offset-xxl-1
+    +m-offset-xxl(1)
+  .offset-xxl-2
+    +m-offset-xxl(2)
+  .offset-xxl-3
+    +m-offset-xxl(3)
+  .offset-xxl-4
+    +m-offset-xxl(4)
+  .offset-xxl-5
+    +m-offset-xxl(5)
+  .offset-xxl-6
+    +m-offset-xxl(6)
+  .offset-xxl-7
+    +m-offset-xxl(7)
+  .offset-xxl-8
+    +m-offset-xxl(8)
+  .offset-xxl-9
+    +m-offset-xxl(9)
+  .offset-xxl-10
+    +m-offset-xxl(10)
+  .offset-xxl-11
+    +m-offset-xxl(11)
+  .offset-xxl-12
+    +m-offset-xxl(12)
+  .offset-xxl-13
+    +m-offset-xxl(13)
+  .offset-xxl-14
+    +m-offset-xxl(14)
+  .offset-xxl-15
+    +m-offset-xxl(15)
+  .offset-xxl-16
+    +m-offset-xxl(16)
+  .offset-xxl-17
+    +m-offset-xxl(17)
+  .offset-xxl-18
+    +m-offset-xxl(18)
