@@ -52,7 +52,6 @@ body
 	opacity: 1
 	margin: 0px
 *
-	transition: color .3s ease, opacify .3s ease, border-color .3s ease, background .3s ease
 	font-family: $default-font
 .img-responsive
 	display: block
@@ -378,28 +377,27 @@ html.mm-opening .mm-menu~.mm-slideout
 		margin: 15px 0
 		margin-top: 30px
 		text-transform: uppercase
-		color: $accent
+		color: $dark
 	h3
 		font-size: 22px
 		font-weight: 500
 		margin: 15px 0
 		margin-top: 30px
 		text-transform: uppercase
-		color: $accent
+		color: $dark
 	h4
 		font-size: 20px
-		font-weight: 500
+		font-weight: 700
 		margin: 15px 0
-		margin-top: 30px
 		text-transform: uppercase
-		color: $accent
+		color: $dark
 	h5
 		font-size: 18px
 		font-weight: 500
 		margin: 15px 0
 		margin-top: 30px
 		text-transform: uppercase
-		color: $accent
+		color: $dark
 	h6
 		font-size: 16px
 		font-weight: 500
@@ -622,6 +620,18 @@ html.mm-opening .mm-menu~.mm-slideout
 	&:hover, &:focus
 		background: lighten($green, 10)
 		color: #FFFFFF
+.btn-accent2
+	background: $accent2
+	text-align: center
+	padding: 15px 45px
+	border-radius: 2px
+	font-size: 19px
+	font-weight: 700
+	color: #FFFFFF
+	border-radius: 4px
+	&:hover, &:focus
+		background: lighten($accent2, 10)
+		color: #FFFFFF
 .btn-white
 	background: #ffffff
 	display: inline-block
@@ -750,6 +760,7 @@ html.mm-opening .mm-menu~.mm-slideout
 				padding: 20px 23px
 				z-index: 2
 				border-top: solid 2px $accent
+				animation: fadeEffect .3s ease
 				li
 					text-align: left
 					margin: 0px
@@ -797,8 +808,12 @@ html.mm-opening .mm-menu~.mm-slideout
 		z-index: 2
 		&.slick-next
 			right: 30px
+			width: unset
+			height: unset
 		&.slick-prev
 			left: 30px
+			width: unset
+			height: unset
 		svg
 			position: relative
 			top: 0px
@@ -808,6 +823,8 @@ html.mm-opening .mm-menu~.mm-slideout
 		display: none
 #my-footer
 	min-height: 400px
+
+
 
 #my-header
 	.discr
@@ -886,8 +903,13 @@ html.mm-opening .mm-menu~.mm-slideout
 			display: flex
 			align-items: center
 			justify-content: center
+#my-footer
+	min-height: 500px
+/*Project end*/
 
+//motosky Start
 .features-slider
+	padding: 0 30px
 	.item-c
 		.item-f
 			display: flex
@@ -900,7 +922,502 @@ html.mm-opening .mm-menu~.mm-slideout
 				font-size: 16px
 				margin: 0px
 				margin-left: 30px
+	.slick-next:before, .slick-prev:before
+		display: none
+	.slick-arrow
+		display: flex
+		align-items: center
+		justify-content: center
+		&.slick-next
+			width: unset
+			height: unset
+		&.slick-prev
+			width: unset
+			height: unset
+		svg
+			transform: scale(0.5)
+			path
+				fill: $grey
+.section-moto
+	padding: $padding-sec
+	.h2
+		font-size: 36px
+		font-weight: 700
+		color: $dark
+		text-align: center
+		margin-bottom: 30px
+.about-sec
+	.moto-acont
+		align-items: center
+	.aimg
+		img
+			width: 100%
+			max-width: 100%
+.bg-sec
+	min-height: 640px
+	position: relative
+	.img-bg
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		background-color: #cccccc
+		position: absolute
+		top: 0px
+		left: 0px
+		right: 0px
+		bottom: 0px
+		opacity: 0.2
+.fancybox-button--thumbs, .fancybox-button--share
+	display: none
+.section-moto.factors
+	display: flex
+	align-items: center
+	.standart
+		position: relative
+		z-index: 1
+		background: #FFFFFF
+		padding: 50px 60px
+		border-radius: 2px
+		.row
+			z-index: 3
+		.h2
+			margin-bottom: 50px
+.factors-slider
+	a
+		img
+			height: 340px
+			width: 340px
+			margin: auto
+	.slick-next:before, .slick-prev:before
+		display: none
+	
+	.slick-arrow
+		display: flex
+		align-items: center
+		justify-content: center
+		&.slick-next
+			width: unset
+			height: unset
+			right: -37px
+		&.slick-prev
+			width: unset
+			height: unset
+			left: -37px
+	.f-item
+		position: relative
+		&:hover
+			&:after
+				content: attr(cont)
+				width: 100%
+				height: 100%
+				top: 0px
+				left: 0px
+				border: 0px
+				right: 0px
+				background: rgba(#000, 0.7)
+				z-index: 1323
+				position: absolute
+				pointer-events: none
+				color: #FFFFFF
+				display: flex
+				align-items: center
+				font-size: 16px
+				font-weight: 100
+				padding-left: 30px
+				padding-right: 30px
+#mapInfo
+	height: 640px
+	width: 100%
+	background-color: $grey
+	position: absolute
+	top: 0px
+	left: 0px
 
-/*Project end*/
+.customScroll
+	&::-webkit-scrollbar-track
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+		background-color: #F5F5F5
+	&::-webkit-scrollbar
+		width: 5px
+		height: 5px
+		background-color: #F5F5F5
+	&::-webkit-scrollbar-thumb
+		background-color: $accent
+		border: 0px solid #555555
 
+.map-c
+	height: 640px
+	.container
+		height: 100%
+		.row
+			height: 100%
+	.map-ic
+		position: relative
+	.object-otput
+		position: relative
+		top: 70px
+		background: #FFFFFF
+		border: solid 2px $accent
+		padding: 30px
+		width: 270px
+		max-width: 100%
+		ul
+			list-style: none
+			padding: 0px
+			margin: 0px
+			max-height: 200px
+			overflow: auto
+			li
+				border-bottom: 1px $grey solid
+				padding-bottom: 10px
+				margin-bottom: 10px
+				margin-right: 10px
+				&:last-child
+					border-color: transparent
+					padding-bottom: 0px
+				a
+					font-size: 14px
+					color: $dark
+					font-weight: 100
+					line-height: 1.2
+	.btn-trigger-ccv
+		display: flex
+		align-items: flex-end
+		height: 100%
+	.btn-trigger-cc
+		display: flex
+		flex-wrap: wrap
+		.btn-trigger
+			flex: 1
+			white-space: nowrap
+			margin: 0 15px
+			margin-bottom: 20px
+.btn-trigger
+	background: #FFFFFF
+	border-radius: 5px
+	font-size: 16px
+	font-weight: 100
+	color: $dark
+	border: none
+	outline: none!important
+	margin-bottom: 15px
+	padding: 5px 30px
+	cursor: pointer
+	&.active, &:hover
+		background: $accent
+		color: #FFFFFF
+.cosmos-sec
+	background-image: url("../img/kosmoBg.png")
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding: 95px 0
+	&.cosmo-r
+		.cosmoBoy
+			right: 0px
+			left: unset
+			-moz-transform: scaleX(-1)
+			-o-transform: scaleX(-1)
+			-webkit-transform: scaleX(-1)
+			transform: scaleX(-1) translateY(-50%)
+	.h2
+		color: #fff
+		font-size: 30px
+		font-weight: 700
+		position: relative
+		z-index: 1
+		text-shadow: 2px 2px $dark
+	.cosmo-cont
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+	.btn-accent2
+		max-width: 300px
+	.cosmoBoy
+		background-image: url('../img/cosmoBoy.png')
+		width: 286px
+		height: 201px
+		position: absolute
+		left: 0px
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 0
+
+.section-moto.gallery-sec
+	display: flex
+	align-items: center
+	.standart
+		position: relative
+		z-index: 1
+		background: #FFFFFF
+		padding: 50px 60px
+		border-radius: 2px
+		.col-12
+			padding-left: 5px
+			padding-right: 5px
+		.row
+			z-index: 3
+			margin-left: -5px
+			margin-right: -5px
+		.h2
+			margin-bottom: 50px
+.slick-next:before, .slick-prev:before
+	display: none
+
+.gal-i
+	position: relative
+	&:hover
+		&:after
+			content: "\f0b2"
+			font-size: 20px
+			font-family: 'FontAwesome'
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 40px
+			height: 40px
+			z-index: 10
+			background: $accent
+			color: #FFFFFF
+			border-radius: 100px
+			pointer-events: none
+.gallery-sec
+	.slider-prev
+		width: 100%
+		height: 100%
+		.slider-item
+			margin: 5px
+			margin-right: 0px
+			margin-left: 0px
+			position: relative
+			a
+				height: 448px
+				display: block
+			.cont-slider
+				margin-top: 15px
+				margin-bottom: 0px
+				font-weight: 100
+				font-size: 14px
+			img
+				width: 100%
+				object-fit: cover
+				max-height: 100%
+.vertical-slider
+	height: 448px
+	.slick-prev
+		top: -19px
+	.slick-next
+		bottom: -30px
+		top: unset
+	.slick-prev, .slick-next
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 40px
+		svg
+			transform: scale(0.7)
+	.slider-item
+		margin: 5px
+		margin-left: 0px
+		margin-right: 0px
+		height: 105px
+		border: solid 2px transparent
+		&.slick-current
+			border-color: $accent
+		img
+			width: 100%
+			object-fit: cover
+			max-height: 100%
+.tab-cont
+	.row
+		display: none
+		//animation: fadeEffect .3s ease
+		&.active
+			display: flex
+.tabs-c
+	display: flex
+	align-items: center
+	.t-item
+		margin-right: 30px
+		padding-bottom: 5px
+		margin-bottom: 30px
+		border-bottom: solid 3px transparent
+		&:last-of-type
+			margin-right: 0px
+		&.active
+			border-color: $dark
+			pointer-events: none
+		a
+			font-size: 20px
+			font-weight: 700
+.fancybox-button--thumbs
+	display: none!important
+.technology-sec
+	img
+		max-width: 100%
+		width: 100%
+.gal-ul
+	margin: 0px
+	padding: 0px
+	list-style: none
+	padding-top: 23px
+	li
+		display: flex
+		align-items: flex-start
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0px
+		.li-txt
+			margin-left: 15px
+.teck-cont
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+	.citata
+		display: flex
+		align-items: center
+		background: $green
+		color: #FFFFFF
+		font-size: 16px
+		font-weight: 700
+		padding: 33px
+		position: relative
+		margin-bottom: 40px
+		&:after
+			content: ''
+			position: absolute
+			bottom: -40px
+			right: 70px
+			width: 0
+			height: 0
+			border-top: 40px solid transparent
+			border-bottom: 40px solid transparent
+			border-left: 40px solid $green
+
+.video-reviews
+	.standart
+		position: relative
+		z-index: 1
+		background: #fff
+		padding: 50px 60px
+		-webkit-border-radius: 2px
+		border-radius: 2px
+		.video-cont
+			display: flex
+			align-items: center
+			justify-content: center
+		iframe
+			width: 100%
+			max-width: 940px
+			height: 400px
+.remont-sec
+	.rem-cont
+		margin-bottom: 25px
+		.item-rem
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 255px
+			position: relative
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			&:after
+				content: ''
+				position: absolute
+				background: $dark
+				z-index: 1
+				width: 100%
+				height: 100%
+				opacity: 0.3
+			.txt
+				color: #FFFFFF
+				margin: 0px
+				font-size: 20px
+				font-weight: 700
+				padding: 0 15px
+				text-align: center
+				position: relative
+				z-index: 2
+.slider-plan
+	.border-i
+		border: solid 1px #e0e0e0
+	.item-pl
+		margin: 5px
+		p
+			margin: 0px
+			font-weight: 100
+			margin-top: 10px
+		.progres-b
+			background: #e0e0e0
+			height: 5px
+			width: 100%
+			position: relative
+			margin-top: 15px
+			margin-bottom: 30px
+			.bp-line
+				background: $accent2
+				position: absolute
+				left: 0px
+				top: 0px
+				height: 5px
+	.bot-c
+		padding: 30px
+		padding-bottom: 48px
+	.btn-c
+		display: flex
+		justify-content: space-between
+		a
+			border: solid 1px $accent2
+			font-size: 19px
+			font-weight: 700
+			color: $dark
+			padding: 15px 30px
+			border-radius: 5px
+			width: 50%
+			text-align: center
+			margin-right: 10px
+			margin-bottom: 5px
+			display: flex
+			align-items: center
+			justify-content: center
+			&:last-child
+				margin-right: 0px
+				border-color: $accent
+	.prev
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 550px
+		position: relative
+		background-repeat: no-repeat
+		&.doneBuild,&.soonBuild
+			&:after
+				content: 'Дом сдан'
+				position: absolute
+				left: 0px
+				color: #FFFFFF
+				font-weight: 700
+				font-size: 19px
+				background: $accent2
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 60px
+				width: 200px
+				top: 50px
+		&.soonBuild
+			&:after
+				background: $accent
+				content: 'Скоро сдача'
+
+//motosky end
 @import "media" // Всегда в конце
