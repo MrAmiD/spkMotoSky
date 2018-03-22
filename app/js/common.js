@@ -237,6 +237,93 @@ function planSlider(){
         '</button>'
     });
 }
+function akciiSlider(){
+    $('.akciiSlider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
+        prevArrow: '<button type="button" class="slick-prev sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="39px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M17.748,0.390 C18.006,0.127 18.328,-0.004 18.682,-0.004 C19.036,-0.004 19.358,0.127 19.615,0.390 C20.131,0.914 20.131,1.767 19.615,2.292 L3.196,19.014 L19.615,35.737 C20.131,36.261 20.131,37.114 19.615,37.639 C19.100,38.164 18.263,38.164 17.748,37.639 L0.396,19.965 C-0.120,19.440 -0.120,18.588 0.396,18.064 L17.748,0.390 Z"/></svg>' +
+        '</button>',
+        nextArrow: '<button type="button" class="slick-next sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="38px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M2.252,37.610 C1.994,37.873 1.672,38.003 1.318,38.003 C0.964,38.003 0.642,37.873 0.385,37.610 C-0.131,37.086 -0.131,36.234 0.385,35.711 L16.803,19.001 L0.385,2.292 C-0.131,1.768 -0.131,0.917 0.385,0.391 C0.900,-0.132 1.737,-0.132 2.252,0.391 L19.604,18.051 C20.120,18.575 20.120,19.426 19.604,19.951 L2.252,37.610 Z"/></svg>' +
+        '</button>'
+    });
+}
+function feedbackSlider(){
+    $('.slider-feedBak').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
+        prevArrow: '<button type="button" class="slick-prev sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="39px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M17.748,0.390 C18.006,0.127 18.328,-0.004 18.682,-0.004 C19.036,-0.004 19.358,0.127 19.615,0.390 C20.131,0.914 20.131,1.767 19.615,2.292 L3.196,19.014 L19.615,35.737 C20.131,36.261 20.131,37.114 19.615,37.639 C19.100,38.164 18.263,38.164 17.748,37.639 L0.396,19.965 C-0.120,19.440 -0.120,18.588 0.396,18.064 L17.748,0.390 Z"/></svg>' +
+        '</button>',
+        nextArrow: '<button type="button" class="slick-next sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="38px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M2.252,37.610 C1.994,37.873 1.672,38.003 1.318,38.003 C0.964,38.003 0.642,37.873 0.385,37.610 C-0.131,37.086 -0.131,36.234 0.385,35.711 L16.803,19.001 L0.385,2.292 C-0.131,1.768 -0.131,0.917 0.385,0.391 C0.900,-0.132 1.737,-0.132 2.252,0.391 L19.604,18.051 C20.120,18.575 20.120,19.426 19.604,19.951 L2.252,37.610 Z"/></svg>' +
+        '</button>'
+    });
+}
+function howBuySlider(){
+    $('#how-buy-slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ],
+        prevArrow: '<button type="button" class="slick-prev sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="39px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M17.748,0.390 C18.006,0.127 18.328,-0.004 18.682,-0.004 C19.036,-0.004 19.358,0.127 19.615,0.390 C20.131,0.914 20.131,1.767 19.615,2.292 L3.196,19.014 L19.615,35.737 C20.131,36.261 20.131,37.114 19.615,37.639 C19.100,38.164 18.263,38.164 17.748,37.639 L0.396,19.965 C-0.120,19.440 -0.120,18.588 0.396,18.064 L17.748,0.390 Z"/></svg>' +
+        '</button>',
+        nextArrow: '<button type="button" class="slick-next sliderAboutArrow">' +
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="38px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M2.252,37.610 C1.994,37.873 1.672,38.003 1.318,38.003 C0.964,38.003 0.642,37.873 0.385,37.610 C-0.131,37.086 -0.131,36.234 0.385,35.711 L16.803,19.001 L0.385,2.292 C-0.131,1.768 -0.131,0.917 0.385,0.391 C0.900,-0.132 1.737,-0.132 2.252,0.391 L19.604,18.051 C20.120,18.575 20.120,19.426 19.604,19.951 L2.252,37.610 Z"/></svg>' +
+        '</button>'
+    });
+}
 
 function trigerSliderArrow(sliderSelector, varthis){//При нажатии на кнопки Prev/next преключать позицию слайдера sliderSelector
     console.log('trigerSlider', sliderSelector);
@@ -250,42 +337,93 @@ function trigerSliderArrow(sliderSelector, varthis){//При нажатии на
 }
 
 function trigerSliderPrev(sliderSelectorClick, sliderSelectorChange, varthis){//При нажатии на элемент слайдера sliderSelectorClick, преключать позицию слайдера sliderSelectorChange
-    var sliderChange = $(sliderSelectorChange),
-        sliderClick = $(sliderSelectorClick),
+    var sliderChange = $(varthis).closest('.row').find('.slider-prev'),
+        sliderClick = $(varthis).parents('.vertical-slider'),
         index = $(varthis).data("slick-index");
     console.log('index = ', $(varthis).data("slick-index"));
     sliderChange[0].slick.slickGoTo(parseInt(index));
     sliderClick[0].slick.slickGoTo(parseInt(index));
 }
 
-
-
 $(document).on('click', '.vertRow', function () {
     console.log('click');
     trigerSliderArrow('.slider-prev', this);
 });
-
 $(document).on('click', '.vertical-slider .slider-item', function () {
     //console.log('index = ', this.attr("data-slick-index"));
+
     trigerSliderPrev(".vertical-slider", ".slider-prev", this);
 
 });
 
-$(document).on('click', '.gallery-sec .tabs-c .t-item', function () {
-    var index = $(this).index();
-    console.log('index = ', $(this).index());
-    $('.gallery-sec .tabs-c .t-item').removeClass('active');
-    $(this).addClass('active');
-    $('.tab-cont .row').removeClass('active');
-    $('.tab-cont .row').eq(index).addClass('active');
+function setFormParam(a, n, t) {
+    var o = window.location.origin + window.location.pathname,
+        i = $('form[name="MODAL_ORDER_LANGING"]');
+    i.find('[field="URL"]').val(o), i.find('[field="PARAMS"]').val(a)
+}
 
-    $('.vertRow').click();
-    //$('.tab-cont')
-    
+$(document).on('click', '#how-buy-slider .hb-item', function () {
+    $($(this).data().target).click();
     
 });
 
+
+function tabsChange(varthis){
+    var index = $(varthis).index();
+    //$('.gallery-sec .tabs-c .t-item').removeClass('active');
+    $(varthis).closest('.tabs-c').find('.t-item').removeClass('active');
+    $(varthis).addClass('active');
+
+    $(varthis).closest('.container').find('.tab-cont .row').removeClass('active');
+    $(varthis).closest('.container').find('.tab-cont .row').eq(index).addClass('active');
+
+    //$('.tab-cont .row').removeClass('active');
+    //$('.tab-cont .row').eq(index).addClass('active');
+
+
+}
+
+$(document).on('click', '.gallery-sec .tabs-c .t-item', function () {
+    tabsChange(this);
+    $('.vertRow').click();
+    //$('.tab-cont')
+});
+
+$(document).on('click', '.buildMonth-sec .tabs-c .t-item', function () {
+    tabsChange(this);
+    //$('.tab-cont')
+});
+$(document).on('click', '.docs-sec .tabs-c .t-item', function () {
+    tabsChange(this);
+});
+
 $(function() {
+
+    $('#mainmap').maphilight({
+        fillColor: '8c4d8b',
+        strokeColor: '8c4d8b',
+        fill: true,
+        fillOpacity: 0.2,
+        stroke: true,
+        strokeOpacity: 1,
+        strokeWidth: 3,
+        fade: true,
+        alwaysOn: false,
+        neverOn: false,
+        groupBy: false,
+        wrapClass: true,
+        shadow: false,
+        shadowX: 0,
+        shadowY: 0,
+        shadowRadius: 6,
+        shadowColor: '000000',
+        shadowOpacity: 0.8,
+        shadowPosition: 'outside',
+        shadowFrom: false
+    });
+
+    $('input[type="tel"]').mask("+7 (999) 999-9999");
+
     /*datepicker start*/
 
     //Календарь для выбора даты

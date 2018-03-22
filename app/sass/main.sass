@@ -105,6 +105,8 @@ input
 	top: 0px
 	vertical-align: top
 	border-radius: 5px
+	width: 100%
+	margin-bottom: 15px
 
 @-webkit-keyframes fadeEffect
 	0%
@@ -620,7 +622,7 @@ html.mm-opening .mm-menu~.mm-slideout
 	&:hover, &:focus
 		background: lighten($green, 10)
 		color: #FFFFFF
-.btn-accent2
+.btn-accent2, .btn__color-1
 	background: $accent2
 	text-align: center
 	padding: 15px 45px
@@ -629,6 +631,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	font-weight: 700
 	color: #FFFFFF
 	border-radius: 4px
+	height: auto
+	display: inline-block
 	&:hover, &:focus
 		background: lighten($accent2, 10)
 		color: #FFFFFF
@@ -821,11 +825,35 @@ html.mm-opening .mm-menu~.mm-slideout
 				fill: $accent
 	.slick-next:before, .slick-prev:before
 		display: none
+
+.how-buy-section
+	.btn-accent2
+		margin-top: 30px
+
 #my-footer
-	min-height: 400px
-
-
-
+	padding: 45px 0px
+	.sale-txt
+		font-weight: 100
+		font-size: 16px
+		margin: 0px
+	.all-c
+		color: #0097d8
+		text-transform: uppercase
+		font-weight: 100
+		display: block
+		margin-top: 16px
+	.logo-f
+		margin-bottom: 20px
+		display: block
+	.socials
+		margin-top: 16px
+	p
+		font-weight: 100
+	.usr-i
+		a
+			font-size: 14px
+		p
+			font-size: 14px
 #my-header
 	.discr
 		font-size: 30px
@@ -903,8 +931,6 @@ html.mm-opening .mm-menu~.mm-slideout
 			display: flex
 			align-items: center
 			justify-content: center
-#my-footer
-	min-height: 500px
 /*Project end*/
 
 //motosky Start
@@ -1143,7 +1169,12 @@ html.mm-opening .mm-menu~.mm-slideout
 		top: 50%
 		transform: translateY(-50%)
 		z-index: 0
-
+	.bg-white
+		background: rgba(#ffffff, 0.85)
+		padding: 60px
+		.h2
+			color: #000
+			text-shadow: none
 .section-moto.gallery-sec
 	display: flex
 	align-items: center
@@ -1236,11 +1267,11 @@ html.mm-opening .mm-menu~.mm-slideout
 			object-fit: cover
 			max-height: 100%
 .tab-cont
-	.row
+	&>.row
 		display: none
-		//animation: fadeEffect .3s ease
 		&.active
 			display: flex
+
 .tabs-c
 	display: flex
 	align-items: center
@@ -1418,6 +1449,360 @@ html.mm-opening .mm-menu~.mm-slideout
 			&:after
 				background: $accent
 				content: 'Скоро сдача'
+.akciiSlider
+	.a-item
+		padding: 30px
+		background: $accent
+		height: 200px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		margin: 15px
+		h3
+			color: #FFFFFF
+			text-align: center
+			font-weight: 700
+			font-size: 35px
+		h4
+			color: #FFFFFF
+			font-size: 26px
+			text-align: center
+			font-weight: 700
+		h5
+			color: #FFFFFF
+			text-align: center
+			font-weight: 700
+			font-size: 26px
+	.slick-next, .slick-prev
+		height: 39px
+.txt-pred
+	font-weight: 100
+	font-size: 14px
+	color: $dark
+	padding-left: 15px
+
+.btn-accBorder
+	border: solid 1px $accent2
+	font-size: 19px
+	font-weight: 700
+	color: $dark
+	padding: 15px 30px
+	border-radius: 5px
+	text-align: center
+	margin-right: 10px
+	margin-bottom: 5px
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	background: #FFFFFF
+	&:hover,&:focus
+		color: $dark
+
+#how-buy-slider
+	.hb-item
+		cursor: pointer
+		img
+			margin: auto
+		.how-buy__title
+			font-size: 18px
+			margin: 10px 0
+			padding: 0 10px
+			font-weight: 500
+			color: $accent
+		.how-buy__text
+			font-size: 14px
+			padding: 0 10px
+			font-weight: 300
+
+.buildMonth-sec
+	.build-item
+		margin-bottom: 20px
+		a
+			max-width: 100%
+			display: block
+			width: 100%
+			border: solid 1px $grey
+			img
+				width: 100%
+	p
+		margin-bottom: 0px
+		font-weight: 100
+		margin-top: 20px
+
+.buildMonth-sec
+	.tab-cont
+		.row
+			animation: fadeEffect .3s ease
+	.tabs-c
+		width: 100%
+		justify-content: center
+		.t-item
+			border-width: 2px
+			a
+				font-weight: 100
+				font-size: 16px
+				&:hover, &:focus
+					color: $dark
+
+.docs-sec
+	.standart
+		position: relative
+		z-index: 1
+		background: #fff
+		padding: 50px 60px
+		-webkit-border-radius: 2px
+		border-radius: 2px
+		max-width: 800px
+		border-radius: 5px
+	.h2
+		font-weight: 500
+	.tab-cont
+		.row
+			animation: fadeEffect .3s ease
+	.tabs-c
+		width: 100%
+		justify-content: center
+		.t-item
+			border-width: 1px
+			&.active
+				a
+					font-weight: 500
+			a
+				font-weight: 100
+				font-size: 16px
+				&:hover, &:focus
+					color: $dark
+	.docs-slider__file-item
+		font-weight: 100
+		position: relative
+		display: inline-block
+		padding-left: 35px
+		color: inherit
+		margin-bottom: 15px
+		margin-right: 15px
+		margin-left: 5px
+		font-size: 14px
+		min-height: 34px
+		vertical-align: middle
+		text-decoration: none
+		&:before
+			content: ''
+			position: absolute
+			height: 34px
+			width: 26px
+			left: 0
+			top: 0
+			border-width: 2px
+			border-style: solid
+		.type
+			font-size: 10px
+			text-transform: uppercase
+			font-weight: 700
+			background-color: #fff
+			position: absolute
+			left: -4px
+			top: 11px
+		.full-type
+			display: block
+
+//todo Скрыть стрелки, показывать только при ховере
+//.slick-slider
+//	.slick-arrow
+//		display: none!important
+//		padding: 15px
+//	&:hover
+//		.slick-arrow
+//			display: inline-block!important
+.slider-feedBak
+	margin-top: 70px
+	.a-item
+		margin: 5px
+		.fb-c
+			border: solid 1px #acacac
+			padding: 15px
+		.user-inf
+			display: flex
+			align-items: center
+			margin-bottom: 15px
+			.ava
+				margin-right: 15px
+			.date-n
+				font-weight: 100
+		.content
+			p
+				font-weight: 100
+
+
+.build-info-cc
+	.info-b
+		position: absolute
+		top: 50px
+		left: 0px
+		z-index: 1
+		background: $accent2
+		display: flex
+		align-items: center
+		flex-direction: column
+		padding: 20px
+		border-radius: 2px
+		&:after
+			content: ''
+			width: 20px
+			height: 20px
+			background: inherit
+			position: absolute
+			left: -10px
+			bottom: 10px
+			z-index: 1
+			transform: rotate(45deg)
+		&.b2
+			left: 732px
+			top: 216px
+		&.b1
+			background: #8c4d8b
+			left: 519px
+			top: 394px
+			&:after
+				top: -10px
+				bottom: unset
+				left: 10px
+		p
+			color: #FFFFFF
+			font-size: 16px
+			font-weight: 700
+			text-align: center
+		a
+			color: #FFFFFF
+			font-size: 16px
+			font-weight: 700
+			text-align: center
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+.main-map
+	margin-top: 42px
+	border-top: solid $accent 5px
+	position: relative
+	&>.container
+		position: relative
+		top: -1px
+	.get-ex
+		position: absolute
+		top: 30px
+		right: 15px
+		z-index: 1
+.mainmap-cc
+	position: relative
+	.priceLow-cc
+		position: absolute
+		bottom: 15px
+		z-index: 1
+		.h3
+			color: #FFFFFF
+			font-size: 55px
+			font-weight: 900
+		.h2
+			font-size: 80px
+			font-weight: 900
+			color: #FFFFFF
+	.price-low
+		left: 0px
+		bottom: 0px
+		position: absolute
+	.title-map
+		position: absolute
+		top: 30px
+		left: 0px
+		z-index: 1
+		display: flex
+		align-items: center
+		.fire-logo
+			margin-right: 30px
+			background-color: rgba(#FFFFFF, 0.5)
+			border-radius: 5px
+			padding: 20px 10px
+			img
+				max-width: 100%
+		h1
+			color: #FFFFFF
+			font-size: 60px
+			margin: 0px
+			line-height: 1
+			.h2
+				color: #ffffff
+				font-size: 90px
+				display: block
+				line-height: 1
+
+
+
 
 //motosky end
+.fancybox-bg
+	background: #efefef
+
+.landing-modal
+	border-top: 25px solid $accent
+	border-bottom: 10px solid $accent
+	border-radius: 5px
+	max-width: 660px
+	padding-top: 0px
+	overflow: visible
+	.fancybox-close-small
+		top: -32px
+		outline: none!important
+		&:after
+			color: #FFFFFF
+			font-size: 30px
+		&:hover:after
+			background: transparent
+	.btn__color-1
+		padding: 0 5px
+		width: 160px
+		margin: auto
+		text-align: center
+		margin-bottom: 30px
+	.modal-content
+		padding: 0px
+		position: relative
+		background-color: #fff
+		background-clip: padding-box
+		outline: none
+	.modal-header
+		min-height: 16.42857143px
+		padding: 0 0 15px
+		display: none
+		.close
+			display: none
+			margin-top: -2px
+			position: absolute
+			top: 0
+			right: 0
+			-webkit-appearance: none
+			padding: 0
+			cursor: pointer
+			background: transparent
+			border: 0
+			text-shadow: 0 1px 0 #fff
+	.modal-body
+		padding: 15px 0 0
+		position: relative
+	h4
+		color: $dark
+		font-size: 18px
+		font-weight: 500
+		margin: 10px 0px
+		text-align: center
+	p
+		color: $dark
+		font-size: 16px
+		font-weight: 100
+		margin-bottom: 10px
+		text-align: center
+
+
+
+
+
 @import "media" // Всегда в конце
