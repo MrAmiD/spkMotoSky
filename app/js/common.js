@@ -107,7 +107,8 @@ function featuresSlider(){
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ],
@@ -137,7 +138,8 @@ function factorsSlider(){
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ],
@@ -195,7 +197,8 @@ function sliderprevSlider(){
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 1,
+                    swipe: true
                 }
             },
             {
@@ -219,13 +222,14 @@ function planSlider(){
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 1
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ],
@@ -248,13 +252,14 @@ function akciiSlider(){
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 1
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ],
@@ -283,7 +288,8 @@ function feedbackSlider(){
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ],
@@ -312,7 +318,8 @@ function howBuySlider(){
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    arrows: false
                 }
             }
         ],
@@ -382,6 +389,10 @@ function tabsChange(varthis){
 
 
 }
+
+$('.secTrigger ul li').on('click', function () {
+    $("html, body").animate({ scrollTop: $($(this).data().trigger).offset().top - 0}, 600);
+});
 
 $(document).on('click', '.gallery-sec .tabs-c .t-item', function () {
     tabsChange(this);

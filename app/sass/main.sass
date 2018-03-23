@@ -188,6 +188,29 @@ input
 	8%, 12%
 		transform: translate3d(4px, 0, 0)
 	100%
+
+@keyframes rightJump
+	0%
+		bottom: 0px
+	10%
+		bottom: 20px
+	20%
+		bottom: 20px
+	30%
+		bottom: 0px
+	100%
+		bottom: 0px
+@keyframes leftJump
+	0%
+		bottom: 0px
+	10%
+		bottom: -20px
+	20%
+		bottom: -20px
+	30%
+		bottom: 0px
+	100%
+		bottom: 0px
 .text-center
 	text-align: center
 ::selection
@@ -278,6 +301,8 @@ html.mm-opening .mm-menu~.mm-slideout
 	max-width: 100%
 	height: calc(100% - 112px)
 	transition: all .3s ease!important
+	border-top: 5px solid #0081c6
+	border-bottom: 5px solid #0081c6
 	*
 		transition: all .3s ease!important
 	&:not(.mm-menu)
@@ -1687,6 +1712,7 @@ html.mm-opening .mm-menu~.mm-slideout
 	&>.container
 		position: relative
 		top: -1px
+		overflow: hidden
 	.get-ex
 		position: absolute
 		top: 30px
@@ -1801,8 +1827,130 @@ html.mm-opening .mm-menu~.mm-slideout
 		margin-bottom: 10px
 		text-align: center
 
-
-
-
-
+.btn_fix-right
+	position: fixed
+	display: block
+	right: -160px
+	//top: 47%
+	top: 469px
+	z-index: 101
+	transform: rotate(-90deg)
+	a
+		transition: 0.4s
+	.btn-primary
+		position: relative
+		color: #FFFFFF
+		background-color: $accent
+		border: solid 1px $accent
+		border-radius: 2px
+		box-shadow: none
+		text-shadow: none
+		padding: 11px 17px
+		animation: rightJump 5s infinite
+		min-width: 180px
+		display: inline-block
+		text-align: center
+	.btn-primary-link
+		background: $green
+		animation: rightJump 5s infinite
+		animation-delay: 1s
+		border-color: $green
+.btn_fix-left
+	position: fixed
+	display: block
+	left: -160px
+	//top: 47%
+	z-index: 101
+	transform: rotate(-90deg)
+	top: 469px
+	a
+		transition: 0.4s
+	.btn-primary
+		position: relative
+		color: #FFFFFF
+		background-color: $accent
+		border: solid 1px $accent
+		border-radius: 2px
+		box-shadow: none
+		text-shadow: none
+		padding: 11px 17px
+		animation: leftJump 5s infinite
+		min-width: 180px
+		display: inline-block
+		text-align: center
+	.btn-primary-link
+		background: $green
+		animation: leftJump 5s infinite
+		animation-delay: 1s
+		border-color: $green
+.secTrigger
+	position: fixed
+	z-index: 3
+	left: 54px
+	top: 50%
+	transform: translateY(-50%)
+	ul
+		list-style: none
+		margin: 0px
+		padding: 0px
+		border-radius: 5px
+		li
+			position: relative
+			a
+				color: #FFFFFF
+				font-weight: 700
+				font-size: 14px
+				width: 25px
+				height: 25px
+				border-radius: 100px
+				display: flex
+				align-items: center
+				text-align: center
+				justify-content: center
+				background: $accent
+				margin-bottom: 10px
+				&:hover
+					background: $accent2
+			&:hover
+				&:before
+					content: attr(cont)
+					position: absolute
+					background: rgba($accent, 0.5)
+					border-radius: 5px
+					font-size: 16px
+					height: 48px
+					display: flex
+					align-items: center
+					font-weight: 700
+					left: 46px
+					white-space: nowrap
+					color: #FFFFFF
+					top: 50%
+					transform: translateY(-50%)
+					padding: 5px
+					padding-left: 15px
+					padding-right: 15px
+				&:after
+					content: ''
+					position: absolute
+					left: 34px
+					top: 50%
+					transform: translateY(-50%)
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 12px 12px 12px 0
+					border-color: transparent rgba($accent, 0.5) transparent transparent
+	.soc-r
+		.item
+			background: rgba($dark, 0.8)
+			margin-top: 6px
+			border-radius: 5px
+			&:hover
+				background: $accent2
+			.svg-cont
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 36px
 @import "media" // Всегда в конце

@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title><---DevLayouts</title>
+	<title>☁ MotoSky</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,6 +48,85 @@
 </head>
 
 <body>
+
+<!--Top Arrow start-->
+<a href="javascript:" id="return-to-top">
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+<!--Top Arrow end-->
+
+<div class="secTrigger">
+	<ul>
+		<li data-trigger=".about-sec" cont="О комплексе">
+			<a href="javascript:void(0)">
+				1
+			</a>
+		</li>
+		<li data-trigger=".factors" cont="Факторы комфорта">
+			<a href="javascript:void(0)">
+				2
+			</a>
+		</li >
+		<li data-trigger='.infrostructure' cont="Инфраструктура">
+			<a href="javascript:void(0)">
+				3
+			</a>
+		</li>
+		<li data-trigger='.gallery-sec' cont="Двор">
+			<a href="javascript:void(0)">
+				4
+			</a>
+		</li>
+		<li data-trigger='.technology-sec' cont="Технологии строительства">
+			<a href="javascript:void(0)">
+				5
+			</a>
+		</li>
+		<li data-trigger='.video-reviews' cont="Видеообзор">
+			<a href="javascript:void(0)">
+				6
+			</a>
+		</li>
+		<li data-trigger=".remont-sec" cont="Отделка">
+			<a href="javascript:void(0)">
+				7
+			</a>
+		</li>
+		<li data-trigger=".plan-sec" cont="Планировки">
+			<a href="javascript:void(0)">
+				8
+			</a>
+		</li >
+		<li data-trigger='.akcii-sec' cont="Акции">
+			<a href="javascript:void(0)">
+				9
+			</a>
+		</li>
+		<li data-trigger='.how-buy-section' cont="Как купить">
+			<a href="javascript:void(0)">
+				10
+			</a>
+		</li>
+		<li data-trigger='.feedback-sec' cont="Отзывы">
+			<a href="javascript:void(0)">
+				11
+			</a>
+		</li>
+		<li data-trigger='.buildMonth-sec' cont="Ход строительства">
+			<a href="javascript:void(0)">
+				12
+			</a>
+		</li>
+		<li data-trigger='.docs-sec' cont="Документы">
+			<a href="javascript:void(0)">
+				13
+			</a>
+		</li>
+	</ul>
+</div>
+
+
+<!--todo Меню, 2й уровень не влазят полные названия на мобильной веерсии-->
 
 <div id="my-header">
 	<div class="container standart lvl1">
@@ -205,6 +284,20 @@
 
 <div id="my-content">
 
+	<div class="fixed-elem">
+		<div class="btn_fix-right">
+			<a class="btn btn-primary  btn-lg" onclick="PriceFromSPK()" id="getprice_link1" data-toggle="modal" href="#getprice_form">Скачать прайс</a>
+			<a class="btn btn-primary btn-primary-link btn-lg" href="#regontour_form" data-toggle="modal">Экскурсия</a>
+		</div>
+	</div>
+
+	<div class="fixed-elem-left">
+		<div class="btn_fix-left">
+			<a class="btn btn-primary btn-lg" onclick="PriceFromSPK()" id="getprice_link2" data-toggle="modal" href="#getprice_form">Акция</a>
+			<a class="btn btn-primary btn-primary-link btn-lg" href="#regontour_form" data-toggle="modal">Расположение</a>
+		</div>
+	</div>
+
 	<div class="container standart">
 		<div class="row">
 			<div class="col-12">
@@ -229,7 +322,6 @@
 								Заказать экскурсию
 							</a>
 						</div>
-
 						<div class="build-info-cc">
 							<div class="info-b b1">
 								<p>
@@ -263,7 +355,7 @@
 										<h1>
 											Жилой комплекс
 											<span class="h2">
-												МотовилихинSKY
+												Мотовилихин<span class="txt-accent">SKY</span>
 											</span>
 										</h1>
 									</div>
@@ -285,12 +377,14 @@
 								</div>
 							</div>
 						</div>
+						<div class="map-canva">
+							<img id="mainmap" src="img/maimap.png" alt="" usemap="#Map" />
+							<map name="Map" id="Map">
+								<area alt="" title="" href="#" shape="poly" coords="588,385,477,356,472,312,551,249,565,253,570,298,554,311,561,314,571,306,585,310,585,318,596,323,602,374" />
+								<area alt="" title="" href="#" shape="poly" coords="612,393,612,380,626,368,630,370,628,334,644,316,592,301,590,253,601,244,609,245,616,239,631,242,629,250,649,256,658,249,670,253,671,260,682,263,683,270,712,277,715,321,632,399" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+							</map>
+						</div>
 
-						<img id="mainmap" src="img/maimap.png" alt="" usemap="#Map" />
-						<map name="Map" id="Map">
-							<area alt="" title="" href="#" shape="poly" coords="588,385,477,356,472,312,551,249,565,253,570,298,554,311,561,314,571,306,585,310,585,318,596,323,602,374" />
-							<area alt="" title="" href="#" shape="poly" coords="612,393,612,380,626,368,630,370,628,334,644,316,592,301,590,253,601,244,609,245,616,239,631,242,629,250,649,256,658,249,670,253,671,260,682,263,683,270,712,277,715,321,632,399" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
-						</map>
 					</div>
 				</div>
 			</div>
@@ -967,7 +1061,7 @@
 				</div>
 			</div>
 			<div class="row rem-cont">
-				<div class="col-12 col-lg-3">
+				<div class="col-12 col-lg-6 col-xl-3">
 					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/256/25680aac36e92eb5133286edb67491b4.jpg')">
 						<p class="txt">
 							Система <br>
@@ -976,14 +1070,14 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-12 col-lg-3">
+				<div class="col-12 col-lg-6 col-xl-3">
 					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/126/126df8f48a614f3c2964c24dc8ed280a.jpg')">
 						<p class="txt">
 							Полное остекление балконов и лоджий качественными стеклопакетами
 						</p>
 					</div>
 				</div>
-				<div class="col-12 col-lg-3">
+				<div class="col-12 col-lg-6 col-xl-3">
 					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/50e/50e06289246c7a08d4ce4073cd3acba2.jpg')">
 						<p class="txt">
 							Стальные панельные радиаторы Prado Classic
@@ -991,7 +1085,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-12 col-lg-3">
+				<div class="col-12 col-lg-6 col-xl-3">
 					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/cc3/cc394be128bb44bde33b8325aa831b53.jpg')">
 						<p class="txt">
 							Увеличенные оконные проёмы – светло
@@ -1095,7 +1189,7 @@
 		</div>
 	</section>
 
-	<section class="section-moto ">
+	<section class="section-moto plan-sec">
 		<div class="container standart">
 			<div class="row">
 				<div class="col-12">
@@ -1238,7 +1332,7 @@
 		</div>
 	</section>
 
-	<section class="section-moto cosmos-sec">
+	<section class="section-moto cosmos-sec akcii-sec">
 		<div class="container standart">
 			<div class="bg-white">
 				<div class="row">
@@ -1614,20 +1708,7 @@
 
 			<div class="tab-cont">
 				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Январь 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1640,7 +1721,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1653,7 +1734,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1666,7 +1747,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1679,7 +1760,20 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1694,20 +1788,7 @@
 					</div>
 				</div>
 				<div class="row active">
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Февраль 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1720,7 +1801,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1733,7 +1814,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1746,7 +1827,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1759,7 +1840,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1772,74 +1853,7 @@
 							</p>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1854,7 +1868,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1867,7 +1881,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1880,7 +1894,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1893,7 +1907,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1906,7 +1920,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -1919,87 +1933,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2014,7 +1948,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2027,7 +1961,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2040,7 +1974,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2053,7 +1987,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2066,7 +2000,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2079,87 +2013,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2174,7 +2028,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2187,7 +2041,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2200,7 +2054,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2213,7 +2067,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2226,7 +2080,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2239,87 +2093,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2334,7 +2108,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2347,7 +2121,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2360,7 +2134,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2373,7 +2147,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2386,7 +2160,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2399,87 +2173,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="build-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
-								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-							</a>
-							<p>
-								Март 2018 <br>
-								ул. Гашкова, 53 (Позиция 9).<br><br>
-								Ведутся работы по обустройству придомовой территорий.<br>
-								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
-							</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2494,7 +2188,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2507,7 +2201,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2520,7 +2214,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2533,7 +2227,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2546,7 +2240,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2559,7 +2253,407 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="build-item">
 							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
 								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
@@ -2612,94 +2706,76 @@
 				<div class="row active">
 					<div class="col-12">
 						<div class="row">
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
 									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row ">
-					<div class="col-12">
-						<div class="row">
-							<div class="col-12 col-lg-6">
-								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
-									<span class="type">PDF</span>
-									<span class="fname">2ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
-								</a>
-							</div>
-							<div class="col-12 col-lg-6">
-								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
-									<span class="type">PDF</span>
-									<span class="fname">2ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
 						</div>
@@ -2708,16 +2784,154 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="row">
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
-									<span class="fname">3ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-md-6 col-lg-6">
 								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
 									<span class="type">PDF</span>
-									<span class="fname">3ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
 								</a>
 							</div>
 						</div>
