@@ -55,70 +55,71 @@
 </a>
 <!--Top Arrow end-->
 
+<!--todo Переделать этот блок, возможно прикрепить его к верху страницы, либо сделать burger с mmneu в вверху справа-->
 <div class="secTrigger">
 	<ul>
 		<li data-trigger=".about-sec" cont="О комплексе">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout="" style="background: red;" href="javascript:void(0)" cont="О комплексе" >
 				1
 			</a>
 		</li>
 		<li data-trigger=".factors" cont="Факторы комфорта">
-			<a href="javascript:void(0)">
+			<a onmouseover="$(this).css({'background':'black', 'color':'#ffffff'})" onmouseout="$(this).css({'background':'#0097d8', 'color':'#ffffff'})" href="javascript:void(0)" cont="Факторы комфорта">
 				2
 			</a>
 		</li >
 		<li data-trigger='.infrostructure' cont="Инфраструктура">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout="" href="javascript:void(0)" cont="Инфраструктура">
 				3
 			</a>
 		</li>
 		<li data-trigger='.gallery-sec' cont="Двор">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Двор">
 				4
 			</a>
 		</li>
 		<li data-trigger='.technology-sec' cont="Технологии строительства">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Технологии строительства">
 				5
 			</a>
 		</li>
 		<li data-trigger='.video-reviews' cont="Видеообзор">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Видеообзор">
 				6
 			</a>
 		</li>
 		<li data-trigger=".remont-sec" cont="Отделка">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Отделка">
 				7
 			</a>
 		</li>
 		<li data-trigger=".plan-sec" cont="Планировки">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Планировки">
 				8
 			</a>
 		</li >
 		<li data-trigger='.akcii-sec' cont="Акции">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Акции">
 				9
 			</a>
 		</li>
 		<li data-trigger='.how-buy-section' cont="Как купить">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Как купить">
 				10
 			</a>
 		</li>
 		<li data-trigger='.feedback-sec' cont="Отзывы">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Отзывы">
 				11
 			</a>
 		</li>
 		<li data-trigger='.buildMonth-sec' cont="Ход строительства">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Ход строительства">
 				12
 			</a>
 		</li>
 		<li data-trigger='.docs-sec' cont="Документы">
-			<a href="javascript:void(0)">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Документы">
 				13
 			</a>
 		</li>
@@ -294,7 +295,20 @@
 	<div class="fixed-elem-left">
 		<div class="btn_fix-left">
 			<a class="btn btn-primary btn-lg" onclick="PriceFromSPK()" id="getprice_link2" data-toggle="modal" href="#getprice_form">Акция</a>
-			<a class="btn btn-primary btn-primary-link btn-lg" href="#regontour_form" data-toggle="modal">Расположение</a>
+			<a class="btn btn-primary btn-primary-link btn-lg" href="#regontour_form" data-toggle="modal">
+				<span class="svg-c">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						width="18px" height="13px">
+						<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M0.005,6.508 C0.014,10.093 2.926,12.997 6.522,13.005 C10.991,13.005 17.527,7.181 17.809,6.939 C18.052,6.721 18.073,6.347 17.854,6.104 C17.840,6.089 17.825,6.073 17.809,6.060 C17.527,5.815 10.994,-0.007 6.522,-0.007 C2.923,0.010 0.013,2.920 0.005,6.508 ZM9.808,6.508 C9.808,8.318 8.337,9.785 6.522,9.785 C4.707,9.785 3.235,8.318 3.235,6.508 C3.235,4.698 4.707,3.232 6.522,3.232 C8.336,3.233 9.806,4.699 9.808,6.508 Z"/>
+					</svg>
+				</span>
+				<span class="txt">
+					Расположение
+				</span>
+			</a>
 		</div>
 	</div>
 
@@ -323,7 +337,7 @@
 							</a>
 						</div>
 						<div class="build-info-cc">
-							<div class="info-b b1">
+							<div class="info-b b2 js-area1" style="background-color: #8c4d8b">
 								<p>
 									ул. Гашкова, 53, 5-9 подъезд <br>
 									II квартал 2019 г.
@@ -333,10 +347,90 @@
 									Смотреть планировки
 								</a>
 							</div>
-							<div class="info-b b2">
+							<div class="info-b b1 js-area2" style="background-color: #8c4d8b">
 								<p>
-									ул. Гашкова, 53, 5-9 подъезд <br>
-									II квартал 2019 г.
+									ул. Целинная 49б <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b right-arr-b js-area3" style="background-color: #8c4d8b" >
+								<p>
+									ул. Целинная 49a <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b right-arr-b js-area4" style="background-color: #8c4d8b" >
+								<p>
+									ул. Целинная 47a <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b right-arr-b js-area5" style="background-color: #8c4d8b">
+								<p>
+									ул. Целинная 47 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area6" style="background-color: #8c4d8b">
+								<p>
+									ул. Целинная 45 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area7" style="background-color: #d80000">
+								<p>
+									ул. Целинная 39 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area8" style="background-color: #d80000">
+								<p>
+									ул. Целинная 41 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area9" style="background-color: #d80000">
+								<p>
+									ул. Целинная 43 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area10" style="background-color: #d80000">
+								<p>
+									ул. Целинная 43/1 <br>
+									ДОМ СДАН
 								</p>
 								<a href="" onclick="">
 									<!--Ссылка на страницу планировки-->
@@ -380,8 +474,21 @@
 						<div class="map-canva">
 							<img id="mainmap" src="img/maimap.png" alt="" usemap="#Map" />
 							<map name="Map" id="Map">
-								<area alt="" title="" href="#" shape="poly" coords="588,385,477,356,472,312,551,249,565,253,570,298,554,311,561,314,571,306,585,310,585,318,596,323,602,374" />
-								<area alt="" title="" href="#" shape="poly" coords="612,393,612,380,626,368,630,370,628,334,644,316,592,301,590,253,601,244,609,245,616,239,631,242,629,250,649,256,658,249,670,253,671,260,682,263,683,270,712,277,715,321,632,399" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+								<area alt="" id="area1" onmouseover="inMap('.js-area1');" onmouseout="outMap('.js-area1')" title="" href="#" shape="poly" coords="874,439,899,446,936,395,950,400,963,385,963,322,946,318,948,310,936,307,927,316,916,310,905,319,900,319,900,310,887,306,879,316,856,308,856,299,843,297,835,303,823,301,813,312,813,362,887,383,884,416,875,426" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area2" onmouseover="inMap('.js-area2');" onmouseout="outMap('.js-area2')" title="" href="#" shape="poly" coords="835,537,863,520,864,480,797,444,782,454,781,496,811,515,812,524" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+
+								<area alt="" id="area3" onmouseover="inMap('.js-area3');" onmouseout="outMap('.js-area3')" title="" href="#" shape="poly" coords="967,587,941,580,944,565,938,561,940,515,949,504,961,508,967,504,987,509,988,515,1005,520,1005,565,998,578,976,571" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+
+								<area alt="" id="area4" onmouseover="inMap('.js-area4');" onmouseout="outMap('.js-area4')"  title="" href="#" shape="poly" coords="1005,540,1009,540,1071,458,1072,412,1052,405,989,488,988,514,1005,518" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area5" onmouseover="inMap('.js-area5');" onmouseout="outMap('.js-area5')" title="" href="#" shape="poly" coords="1071,442,1096,452,1105,438,1122,441,1131,431,1136,366,1120,361,1117,352,1104,348,1099,357,1083,353,1073,361,1070,410,1073,413" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area6" onmouseover="inMap('.js-area6');" onmouseout="outMap('.js-area6')" title="" href="#" shape="poly" coords="1141,444,1144,401,1153,391,1288,425,1282,470,1219,577,1196,567,1200,522,1234,470" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area7" onmouseover="inMap('.js-area7');" onmouseout="outMap('.js-area7')" title="" href="#" shape="poly" coords="1314,405,1328,337,1332,328,1350,334,1354,326,1368,330,1370,337,1388,342,1376,411,1358,407,1352,418,1349,428,1323,421,1324,408" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+								<area alt="" id="area8" onmouseover="inMap('.js-area8');" onmouseout="outMap('.js-area8')" title="" href="#" shape="poly" coords="1348,518,1328,509,1331,501,1338,485,1352,417,1356,406,1376,414,1384,403,1400,409,1397,417,1417,423,1404,485,1386,480,1383,491,1360,486,1356,498" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+
+								<area alt="" id="area9" onmouseover="inMap('.js-area9');" onmouseout="outMap('.js-area9')"  title="" href="#" shape="poly" coords="1374,603,1392,611,1410,575,1423,502,1403,495,1402,485,1387,482,1380,491,1358,486,1354,498,1344,550,1356,553,1360,545,1382,553,1377,586" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+								<area alt="" id="area10" onmouseover="inMap('.js-area10');" onmouseout="outMap('.js-area10')" title="" href="#" shape="poly" coords="1281,610,1292,585,1328,594,1333,565,1342,550,1354,554,1360,546,1383,554,1376,595,1361,626,1327,616,1321,621" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+
+
 							</map>
 						</div>
 
@@ -549,85 +656,90 @@
 				<div class="col-12">
 					<div class="map-c">
 						<div id="mapInfo">
-							Карта
 							<!--https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/object-manager/frontend-docpage/-->
 							<!--https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/about-docpage/-->
 						</div>
 						<div class="container standart">
 							<div class="row">
-								<div class="col-12 col-lg-3">
+								<div class="col-12 col-lg-4">
 									<div class="map-ic">
 										<div class="map-interface">
 											<div class="object-otput">
-												<ul class="customScroll">
-													<li>
-														<a href="javascript: void(0)">
-															Универсальный магазин «Берег»
-														</a>
-													</li>
-													<li>
-														<a href="javascript: void(0)">
-															Универсальный магазин «Семья»
-														</a>
-													</li>
-													<li>
-														<a href="javascript: void(0)">
-															Универсальный магазин «Монетка»
-														</a>
-													</li>
-													<li>
-														<a href="javascript: void(0)">
-															Магазин цветов
-														</a>
-													</li>
-													<li>
-														<a href="javascript: void(0)">
-															Универсальный магазин «Берег»
-														</a>
-													</li>
-													<li>
-														<a href="javascript: void(0)">
-															Универсальный магазин «Семья»
-														</a>
-													</li>
-													<li>
-														<a href="javascript: void(0)">
-															Универсальный магазин «Монетка»
-														</a>
-													</li>
-													<li>
-														<a href="javascript: void(0)">
-															Магазин цветов
-														</a>
-													</li>
+												<ul class="customScroll infrastructure__list" id="infrastructure__list">
+													<li class="" col="zk" label="ЖК «Мотовилихинский»" lat="58.052492842466" lon="56.349983487974" icon="http://spk.perm.ru/upload/iblock/173/173a71cf919d373f4075cf369a0ee86c.png">
+														ЖК «Мотовилихинский»								</li>
+													<li class="" col="shop" label="Универсальный магазин &quot;Берег&quot;" lat="58.063464178053" lon="56.354206518685" icon="http://spk.perm.ru/upload/iblock/f31/f316cd226429c7571b19de748a853604.png">
+														Универсальный магазин "Берег"								</li>
+													<li class="active" col="shop" label="Универсальный магазин &quot;Семья&quot;" lat="58.062409283571" lon="56.352002059703" icon="http://spk.perm.ru/upload/iblock/48e/48ea28db102baebadeedf66991ed8ccd.png">
+														Универсальный магазин "Семья"								</li>
+													<li class="" col="shop" label="Универсальный магазин &quot;Монетка&quot;" lat="58.054448852268" lon="56.353442078431" icon="http://spk.perm.ru/upload/iblock/1ad/1ad8827f17dc0d47edec1fc145a726d6.png">
+														Универсальный магазин "Монетка"								</li>
+													<li class="" col="shop" label="Магазин цветов" lat="58.063017703534" lon="56.351846491583" icon="http://spk.perm.ru/upload/iblock/943/943c258e3c67130244f5bfc1bd503da0.png">
+														Магазин цветов								</li>
+													<li class="" col="child" label="Детский сад № 415" lat="58.056813616983" lon="56.352533137091" icon="http://spk.perm.ru/upload/iblock/76b/76bca26cfe424ed6d7016e0e3da64609.png">
+														Детский сад № 415								</li>
+													<li class="" col="edu" label="Средняя общеобразовательная школа № 30" lat="58.060356504123" lon="56.355483567006" icon="http://spk.perm.ru/upload/iblock/95b/95bad8e3d3dd5e9724c14a97fd6a7cc1.png">
+														Средняя общеобразовательная школа № 30								</li>
+													<li class="" col="edu" label="Средняя общеобразовательная школа № 74" lat="58.062972214296" lon="56.359292303808" icon="http://spk.perm.ru/upload/iblock/ee8/ee8542da970d1d12ca32d9efda5162d2.png">
+														Средняя общеобразовательная школа № 74								</li>
+													<li class="" col="edu" label="Гимназия № 7" lat="58.056752596281" lon="56.350553083026" icon="http://spk.perm.ru/upload/iblock/5e1/5e1cf00eecb6628f39a2a64095fad413.png">
+														Гимназия № 7								</li>
+													<li class="" col="med" label="Поликлиника № 5, Городская детская клиническая поликлиника № 1" lat="58.062358108908" lon="56.346460615881" icon="http://spk.perm.ru/upload/iblock/0df/0df3a9ed70b0f4bd5eedb3f824ccc94c.png">
+														Поликлиника № 5, Городская детская клиническая поликлиника № 1								</li>
+													<li class="" col="med" label="Городская поликлиника № 7" lat="58.058532546621" lon="56.350252739739" icon="http://spk.perm.ru/upload/iblock/537/537e3aef8309e3acdc71dee7af0b83f0.png">
+														Городская поликлиника № 7								</li>
+													<li class="" col="med" label="Пермский клинический центр" lat="58.057828990345" lon="56.356298958548" icon="http://spk.perm.ru/upload/iblock/b69/b696d7a191681e25a247b84a9176eb5c.png">
+														Пермский клинический центр								</li>
+													<li class="" col="med" label="Аптека &quot;Планета здоровья&quot;" lat="58.061653011205" lon="56.352179085501" icon="http://spk.perm.ru/upload/iblock/462/462ea88bc5a14ef23fa78e4d92b9f4b8.png">
+														Аптека "Планета здоровья"								</li>
+													<li class="" col="med" label="Аптека &quot;Планета здоровья&quot;" lat="58.054543004673" lon="56.354103962375" icon="http://spk.perm.ru/upload/iblock/07e/07ea5f7f8d0fb95de5562de16576ac5b.png">
+														Аптека "Планета здоровья"								</li>
+													<li class="" col="med" label="Аптека &quot;Планета здоровья&quot;" lat="58.051724252971" lon="56.351579655789" icon="http://spk.perm.ru/upload/iblock/911/9118c518c47464b898976c264ef1ae2b.png">
+														Аптека "Планета здоровья"								</li>
+													<li class="" col="sport" label="Искра, ДЮСШ" lat="58.06011198284" lon="56.357125078924" icon="http://spk.perm.ru/upload/iblock/669/669e612e205a77fc6c3ff642f88df219.png">
+														Искра, ДЮСШ								</li>
+													<li class="" col="sport" label="Energy Fitness, фитнес-клуб" lat="58.06299495909" lon="56.356202399023" icon="http://spk.perm.ru/upload/iblock/cf3/cf3334c95fb13fb44d4d1f969573086d.png">
+														Energy Fitness, фитнес-клуб								</li>
+													<li class="" col="bus" label="Остановка: Микрорайон Вышка-2" lat="58.053573075088" lon="56.354437600416" icon="http://spk.perm.ru/upload/iblock/a96/a967e740069b92361aeaf5e1f54012d5.png">
+														Остановка: Микрорайон Вышка-2								</li>
+													<li class="" col="bus" label="Остановка: Ивана Франко" lat="58.063657385239" lon="56.355236803778" icon="http://spk.perm.ru/upload/iblock/e60/e60d77a9723f680335b16b0189514229.png">
+														Остановка: Ивана Франко								</li>
+													<li class="" col="bus" label="Остановка: Больница (Вышка-2)" lat="58.056357347613" lon="56.356904644861" icon="http://spk.perm.ru/upload/iblock/6a3/6a30017599bbc1ca5dc59bd802840f80.png">
+														Остановка: Больница (Вышка-2)								</li>
 												</ul>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-12 col-lg-9">
+							</div>
+							<div class="row group-r">
+								<div class="col-12 col-lg-4"></div>
+								<div class="col-12 col-lg-8 btn-trigger-ccc">
 									<div class="btn-trigger-ccv">
 										<div class="btn-trigger-cc">
-											<button class="btn-trigger">
+											<button class="btn-trigger" data-col="sport">
 												Спорт
 											</button>
-											<button class="btn-trigger">
+											<button class="btn-trigger" data-col="cafe">
 												Кафе и ректораны
 											</button>
-											<button class="btn-trigger">
+											<button class="btn-trigger" data-col="child">
 												Детские учреждения
 											</button>
-											<button class="btn-trigger">
+											<button class="btn-trigger" data-col="shop">
 												Магазины
 											</button>
-											<button class="btn-trigger">
+											<button class="btn-trigger" data-col="edu">
 												Образовательные учреждения
 											</button>
-											<button class="btn-trigger">
+											<button class="btn-trigger" data-col="bus">
 												Общественный транспорт
 											</button>
-											<button class="btn-trigger">
+											<button class="btn-trigger" data-col="med">
 												Аптеки
+											</button>
+											<button class="btn-trigger" data-col="all">
+												Всё
 											</button>
 										</div>
 									</div>
@@ -1029,7 +1141,6 @@
 			</div>
 		</div>
 	</section>
-
 
 	<section class="section-moto video-reviews bg-sec">
 		<div class="img-bg" style="background-image: url('img/factors-bg.png')">
@@ -1458,7 +1569,6 @@
 		</div>
 	</section>
 
-
 	<section class="section-moto gallery-sec feedback-sec">
 		<div class="container standart">
 			<div class="row">
@@ -1473,80 +1583,68 @@
 					<!--Добавить Fancybox gallery при клике на слайды-->
 					<div class="slider-prev">
 						<div class="slider-item">
-							<a  class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-								<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
-							</a>
-							<p class="cont-slider">
-								ЖК «МотовилихинSKY» - городской комфорт <br>
-								в экорайоне Перми
-							</p>
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
 						</div>
 						<div class="slider-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
-								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
-							</a>
-							<p class="cont-slider">
-								ЖК «МотовилихинSKY» - городской комфорт <br>
-								в экорайоне Перми
-							</p>
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
 						</div>
 						<div class="slider-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
-								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
-							</a>
-							<p class="cont-slider">
-								ЖК «МотовилихинSKY» - городской комфорт <br>
-								в экорайоне Перми
-							</p>
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
 						</div>
 						<div class="slider-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
-								<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
-							</a>
-							<p class="cont-slider">
-								ЖК «МотовилихинSKY» - городской комфорт <br>
-								в экорайоне Перми
-							</p>
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
 						</div>
 						<div class="slider-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
-								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
-							</a>
-							<p class="cont-slider">
-								ЖК «МотовилихинSKY» - городской комфорт <br>
-								в экорайоне Перми
-							</p>
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
 						</div>
 						<div class="slider-item">
-							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
-								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
-							</a>
-							<p class="cont-slider">
-								ЖК «МотовилихинSKY» - городской комфорт <br>
-								в экорайоне Перми
-							</p>
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-lg-4 col-xl-3">
 					<div class="vertical-slider">
 						<div class="slider-item">
-							<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
 						</div>
 						<div class="slider-item">
-							<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
 						</div>
 						<div class="slider-item">
-							<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
 						</div>
 						<div class="slider-item">
-							<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
 						</div>
 						<div class="slider-item">
-							<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
 						</div>
 						<div class="slider-item">
-							<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1567,7 +1665,7 @@
 								</div>
 								<div class="content-b content">
 									<p>
-										Товарищи! реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+										Товарищи! реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка
 									</p>
 								</div>
 							</div>
@@ -2673,7 +2771,6 @@
 		</div>
 	</section>
 
-
 	<section class="section-moto docs-sec bg-sec">
 		<div class="img-bg" style="background-image: url('img/factors-bg.png')">
 		</div>
@@ -2938,9 +3035,6 @@
 					</div>
 				</div>
 			</div>
-
-
-
 		</div>
 	</section>
 </div>
@@ -3015,7 +3109,7 @@
 <link rel="stylesheet" href="css/main.min.css">
 <script src="js/scripts.min.js"></script>
 <script src="js/common.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
 <!--For all pages END-->
 <!--For this pages START-->
 
@@ -3045,19 +3139,6 @@
 																									id="bxajaxid_811169ac383332de71f0a5dfc87b89a4_8BACKi"
 																									value="811169ac383332de71f0a5dfc87b89a4"><input
 								type="hidden" name="AJAX_CALL" value="Y">
-							<script type="text/javascript">
-								function _processform_8BACKi() {
-									var obForm = top.BX('bxajaxid_811169ac383332de71f0a5dfc87b89a4_8BACKi').form;
-									top.BX.bind(obForm, 'submit', function () {
-										BX.ajax.submitComponentForm(this, 'comp_811169ac383332de71f0a5dfc87b89a4', true)
-									});
-									top.BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
-								}
-								if (top.BX('bxajaxid_811169ac383332de71f0a5dfc87b89a4_8BACKi'))
-									_processform_8BACKi();
-								else
-									top.BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
-							</script>
 							<input type="hidden" name="sessid" id="sessid" value="e5694062cfa3a06c1426c82cfdb2a4b3"><input
 									type="hidden" name="WEB_FORM_ID" value="23"> <input type="hidden" value="6864"
 																										 name="ajax_opt_add">
@@ -3095,22 +3176,199 @@
 
 <script type="text/javascript">
 	/*For this page START*/
+	var myMap,
+			myCollection,
+			sportColl,
+			cafeColl,
+			childColl,
+			shopColl,
+			eduColl,
+			busColl,
+			medColl;
 
-	function yandexPoints() {
-		console.log('init map ');
-		//map init
-		var myMap = new ymaps.Map('mapInfo', {
-			// центр и коэффициент масштабирования однозначно
-			// определяют область картографирования
-			center: [55.76, 37.64],
-			zoom: 7
+	// Дождёмся загрузки API и готовности DOM.
+	ymaps.ready(initMap);
+	function mapColAdd(colName) {
+		$("#infrastructure__list li").each(function() {
+			var i = new ymaps.Placemark([$(this).attr("lat"), $(this).attr("lon")], {
+				balloonContentBody: $(this).attr("label"),
+				hintContent: $(this).attr("label")
+			},{
+				iconImageHref: $(this).attr("icon"),
+				iconImageSize: [32, 44],
+				iconLayout: 'default#image'
+			});
+
+			if($(this).attr("col") === 'shop' && (colName === 'shop' || colName === 'all') ){
+				shopColl.add(i);
+				//myMap.setBounds(shopColl.getBounds());
+			}
+			else if($(this).attr("col") === 'edu' && (colName === 'edu' || colName === 'all')){
+				eduColl.add(i);
+				//myMap.setBounds(eduColl.getBounds());
+			}
+			else if($(this).attr("col") === 'child' && (colName === 'child' || colName === 'all')){
+				childColl.add(i);
+				//myMap.setBounds(childColl.getBounds());
+			}
+			else if($(this).attr("col") === 'med' && (colName === 'med' || colName === 'all')){
+				medColl.add(i);
+				//myMap.setBounds(medColl.getBounds());
+			}
+			else if($(this).attr("col") === 'sport' && (colName === 'sport' || colName === 'all')){
+				sportColl.add(i);
+				//myMap.setBounds(sportColl.getBounds());
+				console.log('sportFunc');
+			}
+			else if($(this).attr("col") === 'bus' && (colName === 'bus' || colName === 'all')){
+				busColl.add(i);
+				//myMap.setBounds(busColl.getBounds());
+			}
+			else if($(this).attr("col") === 'cafe' && (colName === 'cafe' || colName === 'all')){
+				cafeColl.add(i);
+				//myMap.setBounds(cafeColl.getBounds());
+			}else if($(this).attr("col") === 'zk'){
+				myMap.geoObjects.add(i);
+			}
+
+			//myCollection.add(i);
+			//myMap.geoObjects.add(i);
 		});
 
-		// Создание менеджера объектов.
-		//var objectManager = new ymaps.ObjectManager();
+		if(colName === 'all'){
+			myMap.geoObjects.add(myCollection).add(sportColl).add(cafeColl).add(childColl).add(shopColl).add(eduColl).add(busColl).add(medColl);
+			myMap.setBounds(medColl.getBounds());
+		}
+		if(colName === 'sport'){
+			myMap.geoObjects.add(sportColl);
+			myMap.setBounds(sportColl.getBounds());
+
+		}
+		if(colName === 'cafe'){
+			myMap.geoObjects.add(cafeColl);
+			myMap.setBounds(cafeColl.getBounds());
+		}
+		if(colName === 'child'){
+			myMap.geoObjects.add(childColl);
+			myMap.setBounds(childColl.getBounds());
+		}
+		if(colName === 'shop'){
+			myMap.geoObjects.add(shopColl);
+			myMap.setBounds(shopColl.getBounds());
+		}
+		if(colName === 'edu'){
+			myMap.geoObjects.add(eduColl);
+			myMap.setBounds(eduColl.getBounds());
+		}
+		if(colName === 'bus'){
+			myMap.geoObjects.add(busColl);
+			myMap.setBounds(busColl.getBounds());
+		}
+		if(colName === 'med'){
+			myMap.geoObjects.add(medColl);
+			myMap.setBounds(medColl.getBounds());
+		}
 	}
-	
+	function initMap(){
+		//var i;
+		myMap = new ymaps.Map("mapInfo", {
+			center: [$("#infrastructure__list li").eq(0).attr("lat"), $("#infrastructure__list li").eq(0).attr("lon")],
+			zoom: 15,
+			behaviors: ["default"],
+			controls: ['routeButtonControl']
+		});
+
+		myMap.options.set('minZoom', 12);
+		myMap.options.set('maxZoom', 17);
+
+		//Определяем все коллекции для группировки маркеров
+		myCollection = new ymaps.GeoObjectCollection(null, {});
+		sportColl = new ymaps.GeoObjectCollection(null, {});
+		cafeColl = new ymaps.GeoObjectCollection(null, {});
+		childColl = new ymaps.GeoObjectCollection(null, {});
+		shopColl = new ymaps.GeoObjectCollection(null, {});
+		eduColl = new ymaps.GeoObjectCollection(null, {});
+		busColl = new ymaps.GeoObjectCollection(null, {});
+		medColl = new ymaps.GeoObjectCollection(null, {});
+
+		myMap.controls.add("zoomControl"),
+		myMap.behaviors.disable("scrollZoom"),
+		/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (myMap.behaviors.disable("drag"),
+		$(".fullscreenmap").css("display", "flex")),
+		$(".fullscreenmap").click(function() {
+			$("#mapInfo").toggleClass("fs"), $(".fullscreenmap").toggleClass("fs"), myMap.container.fitToViewport(), boolmap ? myMap.behaviors.enable("drag") : myMap.behaviors.disable("drag"), boolmap = !boolmap
+		});
+
+		// Создаём макет содержимого.
+		var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+				'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+		);
+
+		mapColAdd('all');
+
+
+
+		$('.map-c .btn-trigger-cc .btn-trigger').on('click', function (){
+			//Чистим карту
+			myCollection.removeAll();
+			sportColl.removeAll();
+			cafeColl.removeAll();
+			childColl.removeAll();
+			shopColl.removeAll();
+			eduColl.removeAll();
+			busColl.removeAll();
+			medColl.removeAll();
+
+			try{
+				mapColAdd($(this).data().col);
+				$('.btn-trigger-ccc').css({"margin-top":"0"});
+				$('.map-c .object-otput').fadeIn();
+				$('.map-c .btn-trigger-cc .btn-trigger').removeClass('active');
+				$(this).addClass('active');
+
+
+				$('.map-c .object-otput ul li').hide();
+
+				if($(this).data().col !== "all"){
+					$('.map-c .object-otput ul li[col="'+$(this).data().col+'"]').fadeIn();
+				}else{
+					$('.map-c .object-otput ul li').fadeIn();
+				}
+			} catch (err){
+				console.error('Ошибка ' + err.name + ":" + err.message + "\n" + err.stack);
+				$('.map-c .btn-trigger-cc .btn-trigger').removeClass('active');
+				$('.map-c .object-otput').hide();
+				$('.btn-trigger-ccc').css({"margin-top":"267px"});
+			}
+		});
+
+		$('#infrastructure__list li').on('click', function() {
+			setCenter(this);
+		});
+
+
+	}
+
+	function setCenter(i) {
+		myMap.setCenter([$(i).attr("lat"), $(i).attr("lon")]), myMap.setZoom(17), $("#infrastructure__list li").removeClass("active"), $(i).addClass("active")
+	}
+
+	function fbSameSlides(){
+		var arrFB = [], maxVal;
+		$('.slider-feedBak .a-item .fb-c').each(function(){
+			arrFB.push($(this).height());
+		});
+
+		maxVal = Math.max.apply(null, arrFB)
+
+		$('.slider-feedBak .a-item .fb-c').each(function(){
+			$(this).height(maxVal);
+		});
+	};
+
 	$(function() {
+
+
 		featuresSlider();
 		factorsSlider();
 		verticalSlider();
@@ -3119,16 +3377,22 @@
 		akciiSlider();
 		howBuySlider();
 		feedbackSlider();
+		fbSameSlides();
 		//yandexPoints();
-		
-		
+
+
+
 	});
+
 
 
 	/*For this page END*/
 
 	/*For all pages START*/
 	$(function() {
+
+
+
 		$(window).resize(function () {
 //			$('.headSubmOpen').addClass('active');
 //			$('.js-headSubm').slideDown();

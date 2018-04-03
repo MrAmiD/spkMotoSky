@@ -352,6 +352,13 @@ function trigerSliderPrev(sliderSelectorClick, sliderSelectorChange, varthis){//
     sliderClick[0].slick.slickGoTo(parseInt(index));
 }
 
+function inMap(selector) {
+    $(selector).fadeIn(100);
+}
+function outMap(selector) {
+    setTimeout(function() { $(selector).hide(); }, 200);
+}
+
 $(document).on('click', '.vertRow', function () {
     console.log('click');
     trigerSliderArrow('.slider-prev', this);
@@ -393,6 +400,7 @@ function tabsChange(varthis){
 $('.secTrigger ul li').on('click', function () {
     $("html, body").animate({ scrollTop: $($(this).data().trigger).offset().top - 0}, 600);
 });
+ 
 
 $(document).on('click', '.gallery-sec .tabs-c .t-item', function () {
     tabsChange(this);

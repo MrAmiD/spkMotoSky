@@ -6,8 +6,41 @@
 
 
 @media only screen and (max-width : 1850px)
-  /**/
-//Extra large: <1200px
+  .map-canva>div
+    right: 496px!important
+  .build-info-cc
+    .info-b
+      &.js-area1
+        left: 483px
+        top: 218px
+      &.js-area2
+        left: 379px
+        top: 383px
+      &.js-area3
+        left: 215px
+        top: 439px
+      &.js-area4
+        left: 277px
+        top: 362px
+      &.js-area5
+        left: 347px
+        top: 271px
+      &.js-area6
+        left: 542px
+        top: 271px
+      &.js-area7
+        left: 672px
+        top: 186px
+      &.js-area8
+        left: 698px
+        top: 266px
+      &.js-area9
+        left: 698px
+        top: 340px
+      &.js-area10
+        left: 662px
+        top: 409px
+//Extra large: <maxWidth
 +media-breakpoint-down(xl)
   .mainmap-cc
     .title-map
@@ -21,8 +54,10 @@
       font-size: 35px
     .priceLow-cc .h2
       font-size: 70px
-//Large: <992px
+//Large: <1200px
 +media-breakpoint-down(lg)
+  .secTrigger
+    display: none
   .buildMonth-sec .tabs-c
     flex-wrap: wrap
   .remont-sec .rem-cont .item-rem
@@ -80,7 +115,7 @@
       margin-top: 10px
     .socials
       margin-top: 0px
-//Medium: <768px sm
+//Medium: <992px sm
 +media-breakpoint-down(md)
   .cosmos-sec .btn-accent2
     z-index: 1
@@ -112,8 +147,10 @@
     a
       text-align: right
 
-//Small: <576px
+//Small: <768px
 +media-breakpoint-down(sm)
+  .map-c .group-r
+    margin-top: 136px
   .mainmap-cc .title-map
     left: unset
     top: unset
@@ -136,8 +173,28 @@
     font-size: 24px
   .mainmap-cc .title-map .fire-logo
     min-width: 132px
-//Extra small: >0
+//Extra small: 576px
 +media-breakpoint-down(xs)
+  .fixed-elem
+    display: none
+  #mapInfo
+    position: relative
+    order: 2
+    overflow: hidden
+    max-width: 80vh
+  .map-c
+    height: auto
+    display: flex
+    flex-direction: column
+    margin-bottom: 30px
+    .group-r
+      display: none
+    .object-otput
+      top: 0px
+    .container
+      padding: 0px
+  .fixed-elem-left
+    display: none
   .buildMonth-sec
     padding-bottom: 0px
   .slider-feedBak

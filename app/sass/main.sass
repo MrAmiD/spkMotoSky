@@ -222,16 +222,16 @@ input
 #return-to-top
 	position: fixed
 	z-index: 2
-	bottom: 16px
-	right: 20px
+	bottom: 15px
+	right: 15px
 	background: $accent
 	width: 40px
 	height: 40px
 	display: block
 	text-decoration: none
-	-webkit-border-radius: 35px
-	-moz-border-radius: 35px
-	border-radius: 35px
+	-webkit-border-radius: 2px
+	-moz-border-radius: 2px
+	border-radius: 2px
 	display: none
 	-webkit-transition: all 0.3s linear
 	-moz-transition: all 0.3s ease
@@ -1083,7 +1083,7 @@ html.mm-opening .mm-menu~.mm-slideout
 	position: absolute
 	top: 0px
 	left: 0px
-
+	//z-index: 102
 .customScroll
 	&::-webkit-scrollbar-track
 		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
@@ -1095,22 +1095,33 @@ html.mm-opening .mm-menu~.mm-slideout
 	&::-webkit-scrollbar-thumb
 		background-color: $accent
 		border: 0px solid #555555
+.infrostructure
+	padding-bottom: 0px
+	padding-top: 28px
+	position: relative
+	z-index: 102
+
+.btn-trigger-ccc
+	margin-top: 267px
 
 .map-c
 	height: 640px
 	.container
-		height: 100%
+		z-index: 103
 		.row
 			height: 100%
 	.map-ic
 		position: relative
+	.group-r
+		margin-top: 229px
 	.object-otput
 		position: relative
 		top: 70px
 		background: #FFFFFF
 		border: solid 2px $accent
 		padding: 30px
-		width: 270px
+		display: none
+		//width: 270px
 		max-width: 100%
 		ul
 			list-style: none
@@ -1118,11 +1129,13 @@ html.mm-opening .mm-menu~.mm-slideout
 			margin: 0px
 			max-height: 200px
 			overflow: auto
+			height: 200px
 			li
 				border-bottom: 1px $grey solid
 				padding-bottom: 10px
 				margin-bottom: 10px
 				margin-right: 10px
+				cursor: pointer
 				&:last-child
 					border-color: transparent
 					padding-bottom: 0px
@@ -1134,7 +1147,6 @@ html.mm-opening .mm-menu~.mm-slideout
 	.btn-trigger-ccv
 		display: flex
 		align-items: flex-end
-		height: 100%
 	.btn-trigger-cc
 		display: flex
 		flex-wrap: wrap
@@ -1143,6 +1155,9 @@ html.mm-opening .mm-menu~.mm-slideout
 			white-space: nowrap
 			margin: 0 15px
 			margin-bottom: 20px
+			&.active
+				background: $accent2
+				color: #FFFFFF
 .btn-trigger
 	background: #FFFFFF
 	border-radius: 5px
@@ -1254,6 +1269,36 @@ html.mm-opening .mm-menu~.mm-slideout
 			a
 				height: 448px
 				display: block
+				position: relative
+				&.video-link
+					&:after
+						content: ''
+						width: 68px
+						height: 68px
+						position: absolute
+						background: $accent
+						border-radius: 500px
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						animation: .3s fadeEffect ease
+						transition: all .3s ease
+					&:before
+						content: ''
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 12.5px 0 12.5px 21.7px
+						border-color: transparent transparent transparent #ffffff
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						z-index: 1
+						animation: .3s fadeEffect ease
+					&:hover
+						&:after
+							background: $accent2
 			.cont-slider
 				margin-top: 15px
 				margin-bottom: 0px
@@ -1287,6 +1332,45 @@ html.mm-opening .mm-menu~.mm-slideout
 		border: solid 2px transparent
 		&.slick-current
 			border-color: $accent
+		.prev
+			height: 100%
+			width: 100%
+			object-fit: cover
+			background-repeat: no-repeat
+			background-position: center
+			background-color: $grey-l
+			background-size: cover
+			margin-bottom: 15px
+			a
+				display: block
+				width: 100%
+				height: 100%
+				position: relative
+				&.video-link
+					&:after
+						content: ''
+						width: 34px
+						height: 34px
+						position: absolute
+						background: $accent
+						border-radius: 500px
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						animation: .3s fadeEffect ease
+					&:before
+						content: ''
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 12.5px 0 12.5px 21.7px
+						border-color: transparent transparent transparent #ffffff
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						z-index: 1
+						animation: .3s fadeEffect ease
 		img
 			width: 100%
 			object-fit: cover
@@ -1652,6 +1736,8 @@ html.mm-opening .mm-menu~.mm-slideout
 			margin-bottom: 15px
 			.ava
 				margin-right: 15px
+				border-radius: 100px
+				overflow: hidden
 			.date-n
 				font-weight: 100
 		.content
@@ -1666,11 +1752,14 @@ html.mm-opening .mm-menu~.mm-slideout
 		left: 0px
 		z-index: 1
 		background: $accent2
-		display: flex
+		display: block
 		align-items: center
 		flex-direction: column
 		padding: 20px
 		border-radius: 2px
+		display: none
+		&:hover
+			display: flex!important
 		&:after
 			content: ''
 			width: 20px
@@ -1682,16 +1771,63 @@ html.mm-opening .mm-menu~.mm-slideout
 			z-index: 1
 			transform: rotate(45deg)
 		&.b2
-			left: 732px
-			top: 216px
+			left: 979px
+			top: 218px
 		&.b1
 			background: #8c4d8b
-			left: 519px
-			top: 394px
+			left: 875px
+			top: 383px
+		&.js-area1
+			left: 979px
+			top: 218px
+		&.js-area2
+			left: 875px
+			top: 383px
+		&.js-area3
+			left: 711px
+			top: 439px
+		&.js-area4
+			left: 773px
+			top: 362px
+		&.js-area5
+			left: 843px
+			top: 271px
+		&.js-area6
+			left: 1038px
+			top: 271px
+		&.js-area7
+			left: 1168px
+			top: 186px
+		&.js-area8
+			left: 1194px
+			top: 266px
+		&.js-area9
+			left: 1194px
+			top: 340px
+		&.js-area10
+			left: 1158px
+			top: 409px
+		&.upp-arr
 			&:after
 				top: -10px
 				bottom: unset
 				left: 10px
+		&.right-arr
+			&:after
+				top: 10px
+				bottom: unset
+				right: -10px
+				left: unset
+		&.right-arr-b
+			&:after
+				bottom: 10px
+				right: -10px
+				left: unset
+		&.bot-arr
+			&:after
+				right: 10px
+				left: unset
+				bottom: -10px
 		p
 			color: #FFFFFF
 			font-size: 16px
@@ -1703,6 +1839,7 @@ html.mm-opening .mm-menu~.mm-slideout
 			font-weight: 700
 			text-align: center
 			text-decoration: underline
+			display: block 
 			&:hover
 				text-decoration: none
 .main-map
@@ -1767,6 +1904,12 @@ html.mm-opening .mm-menu~.mm-slideout
 //motosky end
 .fancybox-bg
 	background: #efefef
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited
+	color: #000
+	background: transparent
+.fancybox-button:focus, .fancybox-button:hover
+	color: $grey-dark
+
 
 .landing-modal
 	border-top: 25px solid $accent
@@ -1831,9 +1974,9 @@ html.mm-opening .mm-menu~.mm-slideout
 	position: fixed
 	display: block
 	right: -160px
-	//top: 47%
-	top: 469px
-	z-index: 101
+	top: 47%
+	//top: 469px
+	z-index: 103
 	transform: rotate(-90deg)
 	a
 		transition: 0.4s
@@ -1852,19 +1995,22 @@ html.mm-opening .mm-menu~.mm-slideout
 		text-align: center
 	.btn-primary-link
 		background: $green
-		animation: rightJump 5s infinite
+		//animation: rightJump 5s infinite
 		animation-delay: 1s
 		border-color: $green
 .btn_fix-left
 	position: fixed
 	display: block
 	left: -160px
-	//top: 47%
+	top: 47%
 	z-index: 101
 	transform: rotate(-90deg)
-	top: 469px
+	//top: 469px
 	a
 		transition: 0.4s
+	.svg-c
+		svg
+			transform: rotate(90deg)
 	.btn-primary
 		position: relative
 		color: #FFFFFF
@@ -1874,19 +2020,19 @@ html.mm-opening .mm-menu~.mm-slideout
 		box-shadow: none
 		text-shadow: none
 		padding: 11px 17px
-		animation: leftJump 5s infinite
+		//animation: leftJump 5s infinite
 		min-width: 180px
 		display: inline-block
 		text-align: center
 	.btn-primary-link
 		background: $green
-		animation: leftJump 5s infinite
+		//animation: leftJump 5s infinite
 		animation-delay: 1s
 		border-color: $green
 .secTrigger
 	position: fixed
 	z-index: 3
-	left: 54px
+	left: 79px
 	top: 50%
 	transform: translateY(-50%)
 	ul
@@ -1909,38 +2055,40 @@ html.mm-opening .mm-menu~.mm-slideout
 				justify-content: center
 				background: $accent
 				margin-bottom: 10px
+				position: relative
 				&:hover
 					background: $accent2
 			&:hover
-				&:before
-					content: attr(cont)
-					position: absolute
-					background: rgba($accent, 0.5)
-					border-radius: 5px
-					font-size: 16px
-					height: 48px
-					display: flex
-					align-items: center
-					font-weight: 700
-					left: 46px
-					white-space: nowrap
-					color: #FFFFFF
-					top: 50%
-					transform: translateY(-50%)
-					padding: 5px
-					padding-left: 15px
-					padding-right: 15px
-				&:after
-					content: ''
-					position: absolute
-					left: 34px
-					top: 50%
-					transform: translateY(-50%)
-					width: 0
-					height: 0
-					border-style: solid
-					border-width: 12px 12px 12px 0
-					border-color: transparent rgba($accent, 0.5) transparent transparent
+				a
+					&:before
+						content: attr(cont)
+						position: absolute
+						background: rgba($accent, 0.5)
+						border-radius: 5px
+						font-size: 16px
+						height: 48px
+						display: flex
+						align-items: center
+						font-weight: 700
+						left: 46px
+						white-space: nowrap
+						color: #FFFFFF
+						top: 50%
+						transform: translateY(-50%)
+						padding: 5px
+						padding-left: 15px
+						padding-right: 15px
+					&:after
+						content: ''
+						position: absolute
+						left: 34px
+						top: 50%
+						transform: translateY(-50%)
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 12px 12px 12px 0
+						border-color: transparent rgba($accent, 0.5) transparent transparent
 	.soc-r
 		.item
 			background: rgba($dark, 0.8)
